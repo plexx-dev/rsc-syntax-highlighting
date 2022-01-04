@@ -4,6 +4,7 @@
     "description": "This is a Syntax-Highlighting Extension for the Scripting Language RaychelScript (https://github.com/Weckyy702/RaychelScript)",
     "icon": "images/icon.png",
     "version": "0.0.1",
+    "repository": "https://github.com/plexx-dev/rsc-syntax-highlighting",
     "engines": {
         "vscode": "^1.63.0"
     },
