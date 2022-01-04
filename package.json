@@ -1,0 +1,26 @@
+{
+    "name": "rsc",
+    "displayName": "RaychelScript",
+    "description": "This is a Syntax-Highlighting Extension for the Scripting Language RaychelScript (https://github.com/Weckyy702/RaychelScript)",
+    "icon": "images/icon.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rsc",
+            "aliases": ["rsc", "rsc"],
+            "extensions": [".rsc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rsc",
+            "scopeName": "source.rsc",
+            "path": "./syntaxes/rsc.tmLanguage.json"
+        }]
+    }
+}

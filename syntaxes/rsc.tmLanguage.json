@@ -1,0 +1,88 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "rsc",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#error-chars"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#reserved-words"
+		},
+		{
+			"include": "#ctrl-statements"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment",
+			"begin": "#",
+			"end": "\\n",
+			"patterns": [
+				{
+					"name": "comment.line.number-sign",
+					"begin": "#",
+					"end": "\\n"
+				}
+			]
+		},
+		"error-chars": {
+			"name": "invalid.illegal",
+			"begin": "\\_\\_",
+			"end": "\\n"
+		},
+		"operators":{
+			"name": "keyword.operator",
+			"match": "(\\+=|-=|\\*=|/=|%=|\\^=|&=|\\|=|<<=|>>=|!|\\||\\^|\\+|\\*|\\/)"
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.rsc",
+					"match": "(\\[\\[config]]|\\[\\[body]])"
+				},
+				{
+					"name": "keyword.other.rsc",
+					"match": "\\b(let|var)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric",
+			"match": "[0-9]"
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.bool.rsc",
+					"match": "\\b(true|false)\\b"
+				}
+			]
+		},
+		"reserved-words": {
+			"match": "\\b(input|output)\\b",
+			"name": "keyword.other.inputoutput.rsc"
+		},
+		"ctrl-statements": {
+			"patterns": [{
+				"name" : "keyword.control.rsc",
+				"match": "\\b(if|endif|while|endwhile)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.rsc"
+}
