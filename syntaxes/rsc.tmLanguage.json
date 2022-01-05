@@ -25,6 +25,9 @@
 		},
 		{
 			"include": "#ctrl-statements"
+		},
+		{
+			"include": "#identifiers"
 		}
 	],
 	"repository": {
@@ -43,11 +46,11 @@
 		"error-chars": {
 			"name": "invalid.illegal",
 			"begin": "\\_\\_",
-			"end": "\\n"
+			"end": "\\b"
 		},
 		"operators":{
 			"name": "keyword.operator",
-			"match": "(\\+=|-=|\\*=|/=|%=|\\^=|&=|\\|=|<<=|>>=|!|\\||\\^|\\+|\\*|\\/)"
+			"match": "(=|\\+|\\-|\\*|\\/|\\^)"
 		},
 		"keywords": {
 			"patterns": [
@@ -63,7 +66,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric",
-			"match": "[0-9]"
+			"match": "\\b([0-9])+\\b"
 		},
 		"constants": {
 			"patterns": [
@@ -81,6 +84,12 @@
 			"patterns": [{
 				"name" : "keyword.control.rsc",
 				"match": "\\b(if|endif|while|endwhile)\\b"
+			}]
+		},
+		"identifiers": {
+			"patterns": [{
+				"name": "variable.name",
+				"match": "\\b([a-zA-Z_])([a-zA-Z0-9_])*\\b"
 			}]
 		}
 	},
