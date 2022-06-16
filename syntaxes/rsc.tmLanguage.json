@@ -56,7 +56,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.rsc",
-					"match": "(\\[\\[config]]|\\[\\[body]])"
+					"match": "(\\[\\[config\\]\\]|\\[\\[body\\]\\])"
 				},
 				{
 					"name": "keyword.other.rsc",
@@ -83,7 +83,7 @@
 		"ctrl-statements": {
 			"patterns": [{
 				"name" : "keyword.control.rsc",
-				"match": "\\b(if|endif|while|endwhile)\\b"
+				"match": "\\b(if|endif|while|endwhile|else)\\b"
 			}]
 		},
 		"identifiers": {
