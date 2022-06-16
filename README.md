@@ -1,6 +1,5 @@
 # rsc Syntax-Highlighting
 
-
 ## Important
 
 **Note:** This is just a quick VSCode Extension for the Scripting Language [RaychelScript](https://github.com/weckyy702/RaychelScript) so don't expect some sort of a masterpiece here. :)

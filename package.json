@@ -3,7 +3,7 @@
     "displayName": "RaychelScript",
     "description": "This is a Syntax-Highlighting Extension for the Scripting Language RaychelScript (https://github.com/Weckyy702/RaychelScript)",
     "icon": "images/icon.png",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "publisher": "plexx",
     "author": "plexx",
     "repository": "https://github.com/plexx-dev/rsc-syntax-highlighting",
